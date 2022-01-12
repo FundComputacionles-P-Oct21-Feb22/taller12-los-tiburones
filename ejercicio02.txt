@@ -1,0 +1,67 @@
+1.Inicio
+
+2.funcion principal()
+3.columnas, i[0-n]
+4.numero, i[0-n]
+5.numero2, i[0-n]
+6.bandera, boolean <-- false
+7.cadena, x(50) [{a-z}, {A-Z}, {BS}]
+
+8.Mientras (bandera = false)
+
+	9.Escribir "Si desea seguir añadiendo datos ingrese (1), si desea terminar el proceso ingrese (2)."
+	10.Obtener numero
+
+	11.Si(numero = 1) entonces
+		12.bandera = false
+	13.Caso contrario
+		14.Si (numero = 2) entonces
+			15.bandera = true
+	16.Fin si
+
+	17.Escribir "Ingrese (1) para vehículos, ingrese (2) para viviendas"
+	18.Obtener numero2
+	
+	19.Si (numero2 = 1) entonces
+		20.cadena = ingresarVehiculo()
+		21.Escribir cadena
+	22.Caso contrario
+		23.Si (numero2 = 2) entonces
+			24.cadena = ingresarVivienda()
+			25.Escribir cadena
+	26.Fin si
+27.Fin Mientras
+
+28.fin funcion principal
+
+29.funcion ingresarVehiculo
+
+30.cadena, x(50) [{a-z}, {A-Z}, {BS}]
+31.placa, x(50) [{a-z}, {A-Z}, {BS}]
+32.costo, d[0-n]
+
+33.Escribir "Ingrese la placa del vehículo"
+34.Obtener placa
+35.Escribir "Ingrese el costo del vehículo"
+36.Obtener costo
+37.cadena = "Vehículo con placa " + placa + " y un costo de $" + costo
+38.retornar cadena
+
+39.fin funcion ingresarVehiculo
+
+40.funcion ingresarVivienda()
+
+41.nombre, x(50) [{a-z}, {A-Z}, {BS}]
+42.cadena, x(50) [{a-z}, {A-Z}, {BS}]
+43.cuartos, i[0-n]
+
+44.Escribir "Ingrese el nombre del dueño"
+45.Obtener nombre
+46.Escribir "Ingrese el número de cuartos"
+47.Obtener cuartos
+48.cadena = cadena + "Vivienda propiedad de " + nombre + ", con un número de " + cuartos + " cuartos."
+49.retornar cadena
+
+50.fin funcion ingresarVivienda
+
+51.Fin
